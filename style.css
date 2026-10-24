@@ -1,0 +1,151 @@
+/* Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0d1117;
+    color: white;
+    line-height: 1.6;
+}
+
+/* Navigation */
+
+nav {
+    background: #161b22;
+    padding: 15px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+}
+
+nav a {
+    color: #58a6ff;
+    text-decoration: none;
+    margin: 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #00ffcc;
+}
+
+nav button {
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+/* Header */
+
+header {
+    text-align: center;
+    padding: 70px 20px;
+    background: linear-gradient(135deg, #00c6ff, #0072ff);
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+/* Sections */
+
+section {
+    padding: 40px 10%;
+}
+
+/* Card */
+
+.card {
+    background: #161b22;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 15px;
+    border: 1px solid #30363d;
+}
+
+.card:hover {
+    box-shadow: 0 0 20px rgba(0, 198, 255, 0.4);
+}
+
+/* Input */
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 15px;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px 15px;
+}
+
+/* Footer */
+
+footer {
+    background: #161b22;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Light Mode */
+
+.light-mode {
+    background-color: white;
+    color: black;
+}
+
+.light-mode .card {
+    background: #f0f0f0;
+    color: black;
+}
+
+.light-mode nav,
+.light-mode footer {
+    background: #dddddd;
+}
+
+/* Top Button */
+
+#topBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border: none;
+    background: #0072ff;
+    color: white;
+    border-radius: 50%;
+    cursor: pointer;
+    display: block;
+}
+
+/* Date & Time */
+
+#datetime{
+    margin-top:15px;
+    color:#00ffcc;
+    font-size:1.2rem;
+    font-weight:bold;
+    text-shadow:0 0 10px #00ffcc;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+
+    nav a {
+        display: block;
+        margin: 10px;
+    }
+
+    section {
+        padding: 25px;
+    }
+
+}s
