@@ -194,4 +194,8 @@ footer {
         padding: 25px;
     }
 
-}s
+}
+
+html{
+    scroll-behavior:smooth;
+}
