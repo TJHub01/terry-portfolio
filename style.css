@@ -53,6 +53,16 @@ header h1 {
     margin-bottom: 10px;
 }
 
+.profile-img{
+    width:180px;
+    height:180px;
+    object-fit:cover;
+    border-radius:50%;
+    border:5px solid white;
+    margin-bottom:20px;
+    box-shadow:0 0 20px rgba(255,255,255,0.5);
+}
+
 /* Sections */
 
 section {
