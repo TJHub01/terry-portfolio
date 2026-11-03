@@ -145,6 +145,42 @@ footer {
     text-shadow:0 0 10px #00ffcc;
 }
 
+/* Academic Card Style */
+
+.academic-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.academic-card{
+    background:#161b22;
+    border-radius:15px;
+    overflow:hidden;
+    transition:0.3s;
+    border:1px solid #30363d;
+}
+
+.academic-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 0 20px rgba(0,198,255,0.4);
+}
+
+.academic-card img{
+    width:100%;
+    height:180px;
+    object-fit:cover;
+}
+
+.academic-card h3{
+    padding:15px;
+    color:#58a6ff;
+}
+
+.academic-card p{
+    padding:0 15px 15px;
+}
+
 /* Responsive */
 
 @media (max-width: 768px) {
