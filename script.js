@@ -2,8 +2,6 @@
 
 window.onload = function () {
 
-    alert("Welcome to Terry Julian's Portfolio Website!");
-
     typeWriter();
 
 };
