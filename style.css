@@ -109,6 +109,19 @@ footer {
 
 /* Light Mode */
 
+.light-mode header{
+    background:linear-gradient(
+        135deg,
+        #eaf4ff,
+        #d6ebff
+    );
+}
+
+.light-mode nav a:hover{
+    color:#0072ff;
+    text-shadow:none;
+}
+
 .light-mode{
     background:#f5f7fa;
     color:#1a1a1a;
@@ -144,6 +157,10 @@ footer {
 
 .light-mode .academic-card{
     box-shadow:0 3px 10px rgba(0,0,0,0.08);
+}
+
+.light-mode #theme-btn{
+    box-shadow:0 2px 10px rgba(0,0,0,0.15);
 }
 
 /* Dark/Light Button */
