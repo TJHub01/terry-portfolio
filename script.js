@@ -27,9 +27,21 @@ function typeWriter() {
 
 // Dark / Light Mode
 
-function toggleTheme() {
+function toggleTheme(){
 
     document.body.classList.toggle("light-mode");
+
+    const btn = document.getElementById("theme-btn");
+
+    if(document.body.classList.contains("light-mode")){
+
+        btn.innerHTML = "☀️ Light Mode";
+
+    }else{
+
+        btn.innerHTML = "🌙 Dark Mode";
+
+    }
 
 }
 
