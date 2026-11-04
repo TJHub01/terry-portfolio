@@ -110,28 +110,28 @@ footer {
 /* Light Mode */
 
 .light-mode{
-    background-color:#f5f7fa;
+    background:#f5f7fa;
     color:#1a1a1a;
 }
 
 .light-mode nav{
-    background:#ffffff;
+    background:white;
     box-shadow:0 2px 10px rgba(0,0,0,0.1);
 }
 
 .light-mode footer{
-    background:#ffffff;
+    background:white;
 }
 
 .light-mode .card,
 .light-mode .academic-card{
-    background:#ffffff;
+    background:white;
     color:#1a1a1a;
     border:1px solid #dcdcdc;
 }
 
 .light-mode .academic-card p{
-    color:#333333;
+    color:#333;
 }
 
 .light-mode .academic-card h3{
@@ -142,14 +142,8 @@ footer {
     color:#0072ff;
 }
 
-.light-mode .card {
-    background: #f0f0f0;
-    color: black;
-}
-
-.light-mode nav,
-.light-mode footer {
-    background: #dddddd;
+.light-mode .academic-card{
+    box-shadow:0 3px 10px rgba(0,0,0,0.08);
 }
 
 /* Dark/Light Button */
