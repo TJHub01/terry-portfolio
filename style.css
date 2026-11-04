@@ -155,33 +155,21 @@ footer {
 /* Dark/Light Button */
 
 #theme-btn{
-
-    background:linear-gradient(135deg,#0072ff,#00c6ff);
-
-    color:white;
-
+    width:50px;
+    height:50px;
+    border-radius:50%;
     border:none;
-
-    padding:12px 20px;
-
-    border-radius:25px;
-
+    background:linear-gradient(135deg,#0072ff,#00c6ff);
+    color:white;
+    font-size:20px;
     cursor:pointer;
-
-    font-weight:bold;
-
     transition:0.3s;
-
     box-shadow:0 0 10px rgba(0,198,255,0.5);
-
 }
 
 #theme-btn:hover{
-
-    transform:translateY(-3px);
-
+    transform:scale(1.1);
     box-shadow:0 0 20px rgba(0,198,255,0.8);
-
 }
 
 /* Top Button */
