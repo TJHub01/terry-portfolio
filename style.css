@@ -109,9 +109,37 @@ footer {
 
 /* Light Mode */
 
-.light-mode {
-    background-color: white;
-    color: black;
+.light-mode{
+    background-color:#f5f7fa;
+    color:#1a1a1a;
+}
+
+.light-mode nav{
+    background:#ffffff;
+    box-shadow:0 2px 10px rgba(0,0,0,0.1);
+}
+
+.light-mode footer{
+    background:#ffffff;
+}
+
+.light-mode .card,
+.light-mode .academic-card{
+    background:#ffffff;
+    color:#1a1a1a;
+    border:1px solid #dcdcdc;
+}
+
+.light-mode .academic-card p{
+    color:#333333;
+}
+
+.light-mode .academic-card h3{
+    color:#0072ff;
+}
+
+.light-mode a{
+    color:#0072ff;
 }
 
 .light-mode .card {
