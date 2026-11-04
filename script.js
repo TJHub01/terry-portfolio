@@ -31,18 +31,18 @@ function toggleTheme(){
 
     document.body.classList.toggle("light-mode");
 
-    const btn = document.getElementById("theme-btn");
+    const btn =
+        document.getElementById("theme-btn");
 
     if(document.body.classList.contains("light-mode")){
 
-        btn.innerHTML = "☀️ Light Mode";
+        btn.innerHTML = "☀️";
 
     }else{
 
-        btn.innerHTML = "🌙 Dark Mode";
+        btn.innerHTML = "🌙";
 
     }
-
 }
 
 // Live Clock
