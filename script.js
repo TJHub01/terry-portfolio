@@ -4,6 +4,8 @@ window.onload = function () {
 
     typeWriter();
 
+    document.getElementById("theme-btn").innerHTML = "🌙";
+
 };
 
 // Typing Animation
