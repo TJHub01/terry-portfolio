@@ -63,6 +63,25 @@
     }
 }
 
+/* Card Scroll */
+
+.project-scroll{
+    display:flex;
+    gap:25px;
+    overflow-x:auto;
+    scroll-behavior:smooth;
+    padding:20px 0;
+}
+
+.project-scroll::-webkit-scrollbar{
+    height:10px;
+}
+
+.project-scroll::-webkit-scrollbar-thumb{
+    background:#00c6ff;
+    border-radius:10px;
+}
+
 /* Body */
 
 body {
