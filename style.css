@@ -63,6 +63,22 @@
     }
 }
 
+@keyframes gradientMove{
+
+    0%{
+        background-position:0% 50%;
+    }
+
+    50%{
+        background-position:100% 50%;
+    }
+
+    100%{
+        background-position:0% 50%;
+    }
+
+}
+
 /* Card Scroll */
 
 .project-scroll{
@@ -101,13 +117,6 @@ nav {
     top: 0;
 }
 
-nav a {
-    color: #58a6ff;
-    text-decoration: none;
-    margin: 15px;
-    font-weight: bold;
-}
-
 nav a{
     color:#58a6ff;
     text-decoration:none;
@@ -128,9 +137,22 @@ nav button {
 /* Header */
 
 header {
-    text-align: center;
-    padding: 70px 20px;
-    background: linear-gradient(135deg, #00c6ff, #0072ff);
+    text-align:center;
+    padding:70px 20px;
+
+    background:
+        linear-gradient(
+        -45deg,
+        #0072ff,
+        #00c6ff,
+        #0099ff,
+        #0072ff
+    );
+
+    background-size:400% 400%;
+
+    animation:
+        gradientMove 12s ease infinite;
 }
 
 header h1 {
@@ -168,6 +190,27 @@ section {
 
 .card:hover {
     box-shadow: 0 0 20px rgba(0, 198, 255, 0.4);
+}
+
+.academic-card{
+    animation:
+        fadeInUp 0.8s ease;
+}
+
+@keyframes fadeInUp{
+
+    from{
+        opacity:0;
+        transform:
+            translateY(30px);
+    }
+
+    to{
+        opacity:1;
+        transform:
+            translateY(0);
+    }
+
 }
 
 /* Input */
@@ -382,4 +425,43 @@ footer {
 
 html{
     scroll-behavior:smooth;
+}
+
+.skill-bar{
+    width:100%;
+    background:#30363d;
+    border-radius:25px;
+    margin-bottom:15px;
+}
+
+.skill-bar div{
+    padding:8px;
+    color:white;
+    border-radius:25px;
+    text-align:center;
+}
+
+.html{
+    width:85%;
+    background:#0072ff;
+}
+
+.java{
+    width:75%;
+    background:#00c6ff;
+}
+
+.sql{
+    width:80%;
+    background:#6a5acd;
+}
+
+.unity{
+    width:70%;
+    background:#00ffcc;
+}
+
+.figma{
+    width:85%;
+    background:#ff69b4;
 }
