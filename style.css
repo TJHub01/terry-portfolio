@@ -155,6 +155,22 @@ header {
         gradientMove 12s ease infinite;
 }
 
+@keyframes gradientMove {
+
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+
+}
+
 header h1 {
     margin-bottom: 10px;
 }
@@ -170,6 +186,56 @@ header h1 {
         0 0 10px #00c6ff,
         0 0 20px #00c6ff,
         0 0 35px #0072ff;
+    animation: profileGlow 3s ease infinite;
+}
+
+@keyframes profileGlow {
+
+    0%{
+        box-shadow:
+            0 0 10px #00c6ff,
+            0 0 20px #00c6ff,
+            0 0 35px #0072ff;
+    }
+
+    50%{
+        box-shadow:
+            0 0 15px #00c6ff,
+            0 0 35px #00c6ff,
+            0 0 50px #0072ff;
+    }
+
+    100%{
+        box-shadow:
+            0 0 10px #00c6ff,
+            0 0 20px #00c6ff,
+            0 0 35px #0072ff;
+    }
+
+}
+
+#typing{
+    animation: fadeIn 1.5s ease;
+}
+
+@keyframes fadeIn{
+
+    from{
+        opacity:0;
+        transform:translateY(20px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+
+#role{
+    font-size:1.2rem;
+    color:#dbeafe;
+    margin-top:10px;
 }
 
 /* Sections */
