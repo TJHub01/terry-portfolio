@@ -4,7 +4,23 @@ window.onload = function () {
 
     typeWriter();
 
-    document.getElementById("theme-btn").innerHTML = "🌙";
+    const btn =
+        document.getElementById("theme-btn");
+
+    const savedTheme =
+        localStorage.getItem("theme");
+
+    if(savedTheme === "light"){
+
+        document.body.classList.add("light-mode");
+
+        btn.innerHTML = "☀️";
+
+    }else{
+
+        btn.innerHTML = "🌙";
+
+    }
 
 };
 
@@ -40,10 +56,19 @@ function toggleTheme(){
 
         btn.innerHTML = "☀️";
 
+        localStorage.setItem(
+            "theme",
+            "light"
+        );
+
     }else{
 
         btn.innerHTML = "🌙";
 
+        localStorage.setItem(
+            "theme",
+            "dark"
+        );
     }
 }
 
